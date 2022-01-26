@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  --red: #ac0101;
+  --grey: #ffffff;
+}
+.caixa-superior {
+  background-image: url(./288957-fernanda-entregar-ate-dia\ 8.png);
+  background-size: cover;
+  height: 110vh;
+}
+
+.cabecalho {
+  padding-top: 25px;
+  padding-left: 35px;
+  color: var(--red);
+}
+.titulo-cabecalho {
+  display: inline;
+  cursor: pointer;
+}
+.link-cabecalho {
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
+}
+ul {
+  display: inline;
+  list-style: none;
+  margin-left: 100px;
+}
+a {
+  padding: 0px 10px;
+}
+h1 {
+  font-size: 58px;
+  color: var(--red);
+  position: relative;
+  top: 280px;
+  margin-left: 35px;
+}
