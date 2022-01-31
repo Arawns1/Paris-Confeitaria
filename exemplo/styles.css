@@ -1,0 +1,175 @@
+/*
+vh -> view height / altura da tela dividido por 100
+vw -> view width /largura da tela dividido por 100
+margin -> margem espaçar fora
+padding -> margem INTERNA espaçar dentro
+display -> troca a forma que o elemento se comporta na tela (ex: fica sozinho na linha ou na mesma linha com
+outros elementos 
+border-radius: -> arredonda bordas*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.caixa-superior {
+  background-image: url('./288957-fernanda-entregar-ate-dia\ 6.png');
+  background-size: cover;
+  height: 110vh;
+}
+.cabecalho {
+  padding-top: 25px;
+  padding-left: 35px;
+}
+.titulo-cabecalho {
+  font-size: 24px;
+  color: #ffffff;
+  display: inline;
+  cursor: pointer;
+}
+
+.link-cabecalho {
+  font-size: 14px;
+  color: #ffffff;
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 58px;
+  color: #ffffff;
+  position: relative;
+  top: 280px;
+  margin-left: 35px;
+}
+
+.mostrar-formulario {
+  visibility: visible;
+  opacity: 1;
+}
+form {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s linear;
+  background-color: #ffffff;
+  border-radius: 10px;
+  float: right;
+  padding: 20px;
+  margin-right: 50px;
+  position: relative;
+  bottom: 0px;
+}
+input {
+  display: block;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 40px;
+  width: 350px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+textarea {
+  display: block;
+  height: 130px;
+  width: 350px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+  border: 1px solid #e6e6e6;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.titulo-formulario {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #252b42;
+}
+
+button {
+  width: 350px;
+  height: 52px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #40bb15;
+  color: #ffffff;
+}
+
+.pagina-meio {
+  height: 80vh;
+}
+.caixa-central {
+  display: flex;
+  justify-content: space-around;
+}
+#titulo-meio {
+  font-size: 40px;
+  color: #252b42;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card {
+  width: 330px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+.titulo-card {
+  background-color: #40bb15;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 10px 10px 0px 0px;
+}
+#patinho-feio {
+  background-color: #40bb15;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 100px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+ul {
+  padding: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.caixa-inferior {
+  background-color: #252b42;
+  color: #ffffff;
+}
+
+.caixa-inferior {
+  background-color: #252b42;
+}
+
+#titulo-inferior {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.texto-sobre {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 20px 50px 50px 50px;
+  text-align: justify;
+}

@@ -5,11 +5,13 @@
   font-family: 'Montserrat', sans-serif;
   --red: #ac0101;
   --white: hsla(0, 0%, 100%, 1);
+  --green: #40bb15;
 }
 .caixa-superior {
   background-image: url(./288957-fernanda-entregar-ate-dia\ 8.png);
   background-size: cover;
-  height: 110vh;
+  height: 105vh;
+  border-radius: 0px 0px 40px 40px;
 }
 
 .cabecalho {
@@ -29,10 +31,10 @@
 ul {
   display: inline;
   list-style: none;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 a {
-  padding: 0px 30px;
+  padding: 0px 20px;
   text-decoration: none;
 }
 a:visited {
@@ -42,8 +44,9 @@ h1 {
   font-size: 58px;
   color: var(--white);
   position: relative;
-  top: 280px;
+  top: 35%;
   margin-left: 35px;
+  object-fit: cover;
 }
 
 form {
@@ -54,8 +57,11 @@ form {
   float: right;
   padding: 20px;
   margin-right: 50px;
-  position: relative;
   bottom: -100px;
+  position: absolute;
+  left: 850px;
+  top: 150px;
+  z-index: 1;
 }
 
 input {
@@ -82,7 +88,7 @@ textarea {
   padding-top: 10px;
 }
 button {
-  background-color: #40bb15;
+  background-color: var(--green);
   border: none;
   cursor: pointer;
   height: 50px;
@@ -91,7 +97,68 @@ button {
   margin-top: 10px;
   color: white;
 }
+#titulo-meio {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
 label {
   font-size: 14px;
   color: #252b42;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px 0px 75px 0px;
+}
+.pagina-meio {
+  margin-top: 180px;
+  margin-bottom: -100px;
+  height: 105vh;
+}
+.titulo-card {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding-top: 15px;
+  width: 327px;
+  height: 50px;
+}
+.card {
+  width: 328px;
+  height: 280px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+.ul2 {
+  text-align: center;
+}
+li {
+  padding: 10px;
+}
+.caixa-central {
+  display: flex;
+  justify-content: space-around;
+}
+.pagina-sobre {
+  border-radius: 40px 40px 0px 0px;
+  background-color: hsla(209, 75%, 9%, 1);
+  height: 80vh;
+}
+.caixa-inferior {
+  padding: 10px 10px 10px 10px;
+  color: var(--white);
+}
+#titulo-inferior {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 25px;
 }

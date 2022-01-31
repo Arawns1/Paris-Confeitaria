@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <title>Dev Contábil</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="caixa-superior">
+            <div class="cabecalho">
+                <h2 class="titulo-cabecalho"> Dev Contábil </h2>
+                <a href="#titulo-inferior" class="link-cabecalho">Quem Somos</a>
+                <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+                <a class="link-cabecalho" onclick="ChamaAbacate()">Contato</a>
+
+            </div>
+
+            <!-- Forms -->
+            <div>
+                <h1>Dev Contábil</h1>
+                
+                <form id = "formulario-contato" action="https://formsubmit.co/wiravo9991@leezro.com" method="POST">
+                    <h3 class="titulo-formulario"> Entre em Contato</h3>
+                    <label>
+                        Nome
+                        <input type="text" name="Nome" placeholder="Digite seu nome" required>
+                    </label>
+
+                    <label>
+                        E-mail
+                        <input type="email" name="Email" placeholder="Digite seu email" required>
+                    </label>
+
+                    <label>
+                        Fale conosco
+                        <textarea name="Duvida" placeholder="Qual sua dúvida?"></textarea>
+                    </label>
+                    
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+        <!-- Nossos Serviços -->
+        <div class = "pagina-meio">
+        <h2 id="titulo-meio"> Nossos Serviços</h2>
+        <div class="caixa-central">
+            <div class="card">
+                <h3 class="titulo-card"> Contabilidade completa </h3>
+                <ul>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="titulo-card"> Cuidamos do seu negócio </h3>
+                <ul>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="titulo-card" id="patinho-feio"> Cuidamos de você </h3>
+                <ul>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                    <li>Imposto de Renda</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Sobre nós -->
+        </div>
+        <div class="caixa-inferior">
+
+            <h2 id="titulo-inferior"> Sobre nós </h2>
+
+                <p class="texto-sobre">
+                    Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você
+                    vai
+                    matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa
+                    cobra
+                    coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu
+                    muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema,
+                    ordinária!.
+                    Você usa o Lorem Ipsum tradicional? Sabe de nada inocente!! Conheça meu lorem que é Tchan, Tchan,
+                    Tchannn!!
+                    Txu Txu Tu Paaaaa!! Vem, vem ordinária!! Venha provar do meu dendê que você não vai se arrepender. Só na
+                    sacanageeem!! Eu gostchu muitchu, heinn! Eitchaaa template cheio de abundância danadaaa!! Assim você
+                    mata o
+                    papai hein!? Etâaaa Mainhaaaaa...me abusa nesse seu layout, me gera, me geraaaa ordinária!!! Só na
+                    sacanagem!!!! Venha provar do meu dendê Tu du du pááá!.
+
+                    Mas que abundância meu irmãooo!!! Esse é seu Layout danadaaa!??? Sabe de nada inocente!! Vem, vem, vem
+                    ordinária, provar do meu dendê!! Eu gostxuu muitxuu desse seu Layout!! Etâ danadaaaa!! Tá tão lindo que
+                    vou
+                    falar em inglês só pra você mainhaaa!! Know nothing innocent. Ordinary!! Txhann Txhann, Txu txu tu
+                    paaa!!
+                    Damned. Only in Slutty!! Abundance that my borther!! Tchan, Tchan, Tchan...Tu tu tu pa!!!! .
+                </p>
+
+        </div>
+
+    </body>
+    <script>
+        var formulario = document.getElementById("formulario-contato")
+        var i = 0
+    function ChamaAbacate(){
+        i ++
+        console.log("clicou")
+        formulario.className = "mostrar-formulario"
+        if (i == 2){
+            i = 0 
+            formulario.className = "form"
+        }
+}
+    </script>
+
+</html>
+</body>
+
+</html>
