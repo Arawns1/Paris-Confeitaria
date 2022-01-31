@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   --red: #ac0101;
-  --grey: #ffffff;
+  --white: hsla(0, 0%, 100%, 1);
 }
 .caixa-superior {
   background-image: url(./288957-fernanda-entregar-ate-dia\ 8.png);
@@ -13,9 +13,9 @@
 }
 
 .cabecalho {
-  padding-top: 25px;
+  padding-top: 42px;
   padding-left: 35px;
-  color: var(--red);
+  color: var(--white);
 }
 .titulo-cabecalho {
   display: inline;
@@ -29,15 +29,69 @@
 ul {
   display: inline;
   list-style: none;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 a {
-  padding: 0px 10px;
+  padding: 0px 30px;
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
 }
 h1 {
   font-size: 58px;
-  color: var(--red);
+  color: var(--white);
   position: relative;
   top: 280px;
   margin-left: 35px;
+}
+
+form {
+  border-radius: 10px;
+  background-color: white;
+  height: 400px;
+  width: 390px;
+  float: right;
+  padding: 20px;
+  margin-right: 50px;
+  position: relative;
+  bottom: -100px;
+}
+
+input {
+  display: block;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 40px;
+  width: 350px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+textarea {
+  display: block;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 100px;
+  width: 350px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+button {
+  background-color: #40bb15;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 350px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+}
+label {
+  font-size: 14px;
+  color: #252b42;
 }

@@ -14,17 +14,44 @@
     <title>Paris Confeitaria</title>
   </head>
   <body>
+    <!--Parte Navbar--> 
     <div class="caixa-superior">
       <div class="cabecalho">
         <h2 class="titulo-cabecalho">Paris Confeitaria</h2>
         <ul>
           <li class="link-cabecalho"><a>Home</a></li>
-          <li class="link-cabecalho"><a>Quem Somos</a></li>
+          <li class="link-cabecalho"><a href="#titulo-meio">Quem Somos</a></li>
           <li class="link-cabecalho"><a>Serviços</a></li>
           <li class="link-cabecalho"><a>Contato</a></li>
         </ul>
       </div>
+
+      <!--Fim Parte Navbar--> 
+      <!-- Inicio Form -->
+      <form>
+        <label >
+          Nome
+          <input type="text" name="Nome" placeholder="Digite seu nome" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="Qual seu email?" required></input>
+
+        </label>
+
+        <label>
+        Fale conosco
+        <textarea name="Duvida" placeholder="Qual sua dúvida?"></textarea>
+      </label>
+
+      <button type="submit">Enviar</button>
+      </form>
+      <!-- Fim Form -->
       <h1>Paris Confeitaria</h1>
+<div class="pagina-meio">
+
+  <h2 id="titulo-meio">Nossos Serviços</h2>
+</div>
     </div>
   </body>
 </html>
