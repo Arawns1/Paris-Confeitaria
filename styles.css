@@ -6,6 +6,7 @@
   --red: #ac0101;
   --white: hsla(0, 0%, 100%, 1);
   --green: #40bb15;
+  --Azul-sobre: hsla(209, 75%, 9%, 1);
 }
 .caixa-superior {
   background-image: url(./288957-fernanda-entregar-ate-dia\ 8.png);
@@ -36,9 +37,21 @@ ul {
 a {
   padding: 0px 20px;
   text-decoration: none;
+  border-radius: 5px;
+  transition-property: font-size;
+  transition-duration: 0.75s;
 }
 a:visited {
   color: #ffffff;
+}
+
+a:hover {
+  color: var(--red);
+  font-size: 25px;
+  transition-property: color;
+  transition-duration: 0.75s;
+  transition-property: font-size;
+  transition-duration: 0.75s;
 }
 h1 {
   font-size: 58px;
@@ -47,20 +60,32 @@ h1 {
   top: 35%;
   margin-left: 35px;
   object-fit: cover;
+  transition-property: color;
+  transition-duration: 1s;
+}
+h1:hover {
+  color: var(--red);
+  transition-property: color;
+  transition-duration: 0.75s;
+}
+
+.mostrar-formulario {
+  visibility: visible;
+  opacity: 1;
 }
 
 form {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s linear;
+  background-color: #ffffff;
   border-radius: 10px;
-  background-color: white;
-  height: 400px;
-  width: 390px;
   float: right;
   padding: 20px;
+  margin-top: 80px;
   margin-right: 50px;
-  bottom: -100px;
-  position: absolute;
-  left: 850px;
-  top: 150px;
+  position: relative;
+  bottom: 0px;
   z-index: 1;
 }
 
@@ -88,7 +113,7 @@ textarea {
   padding-top: 10px;
 }
 button {
-  background-color: var(--green);
+  background-color: var(--red);
   border: none;
   cursor: pointer;
   height: 50px;
@@ -96,6 +121,10 @@ button {
   border-radius: 5px;
   margin-top: 10px;
   color: white;
+  transition: transform 250ms;
+}
+button:hover {
+  transform: translateY(-5px);
 }
 #titulo-meio {
   font-family: 'Montserrat', sans-serif;
@@ -116,7 +145,6 @@ h2 {
   height: 105vh;
 }
 .titulo-card {
-  background-color: var(--green);
   color: var(--white);
   border-radius: 10px 10px 0px 0px;
   text-align: center;
@@ -131,6 +159,17 @@ h2 {
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
 }
+#cartão_01 {
+  background-color: #061d93;
+}
+#cartão_02 {
+  background-color: var(--white);
+  color: #252b42;
+  border: 1px solid #e6e6e6;
+}
+#cartão_03 {
+  background-color: #df2d34;
+}
 .ul2 {
   text-align: center;
 }
@@ -144,10 +183,10 @@ li {
 .pagina-sobre {
   border-radius: 40px 40px 0px 0px;
   background-color: hsla(209, 75%, 9%, 1);
-  height: 80vh;
+  height: 60vh;
 }
 .caixa-inferior {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
   color: var(--white);
 }
 #titulo-inferior {

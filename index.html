@@ -18,17 +18,17 @@
     <div class="caixa-superior">
       <div class="cabecalho">
         <h2 class="titulo-cabecalho">Paris Confeitaria</h2>
-        <ul>
+        <ul class= "nav">
           <li class="link-cabecalho"><a>Home</a></li>
           <li class="link-cabecalho"><a href="#titulo-inferior">Quem Somos</a></li>
           <li class="link-cabecalho"><a href="#titulo-meio">Serviços</a></li>
-          <li class="link-cabecalho"><a>Contato</a></li>
+          <li class="link-cabecalho"><a onclick="ChamaAbacate()">Contato</a></li>
         </ul>
       </div>
 
       <!--Fim Parte Navbar--> 
       <!-- Inicio Form -->
-      <form>
+      <form id = "formulario-contato" action="https://formsubmit.co/gabrieldamico22@gmail.com" method="POST">
         <label >
           Nome
           <input type="text" name="Nome" placeholder="Digite seu nome" required>
@@ -55,35 +55,35 @@
 
 <div class="caixa-central">
   <div class="card">
-    <h3 class ="titulo-card"> Pãozinho </h3>
+    <h3 class ="titulo-card" id="cartão_01"> Padaria </h3>
     <ul class="ul2">
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
+      <li>Pão francês</li>
+      <li>Pão sírio</li>
+      <li>Pão Doce</li>
+      <li>Pão Integral</li>
+      <li>Baguete</li>
     </ul>
   </div>
 
-  <div class="card">
-    <h3 class ="titulo-card"> Pãozinho 2 </h3>
+  <div class="card" >
+    <h3 class ="titulo-card" id="cartão_02"> Confeitaria </h3>
     <ul class="ul2">
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
+      <li>Bolo de Chocolate</li>
+      <li>Bolo de Cenoura</li>
+      <li>Bolo de Morango</li>
+      <li>Bolo recheado</li>
+      <li>Bolo de Pote</li>
     </ul>
   </div>
   
-  <div class="card">
-    <h3 class ="titulo-card"> Pãozinho 3 </h3>
+  <div class="card" >
+    <h3 class ="titulo-card" id="cartão_03"> Doces e Salgados para festas </h3>
     <ul class="ul2">
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
-      <li>Pãozinho</li>
+      <li>Salgadinhos</li>
+      <li>Brigadeiros</li>
+      <li>Mini-Hamburguers</li>
+      <li>Tortas</li>
+      <li>Bolo de Festa</li>
     </ul>
   </div>
 </div>
@@ -93,20 +93,34 @@
   <div class="caixa-inferior">
     <h2 id="titulo-inferior"> Sobre nós </h2>
     <p>
-      Somos um  escritório moderno, versátil e dinâmico, cujo objetivo é levar soluções criativas e eficazes aos clientes, tendo como sócios o Dr. Kleber Bissolatti e a Dra. Monique Antonacci, profissionais multidisciplinares com sólida formação e vasta experiência em questões de grande complexidade.
+      Somos uma  padaria moderna, versátil e dinâmica, cujo objetivo é levar soluções criativas e eficazes aos clientes, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nulla molestiae. Veniam obcaecati pariatur reiciendis cupiditate hic dolorum, commodi maxime expedita nulla in iure repellat. Illum enim facere voluptatum saepe.
     </p>
     
       <p>
-        Peliciotti Advocacia é um escritório que preza pela qualidade dos serviços jurídicos, com amplo conhecimento e experiência de atuação. Contamos com uma equipe de profissionais experientes para atender nossos clientes de forma personalizada, contemplando as diversas áreas do Direito.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem quasi ad nostrum officiis assumenda maiores enim! Quos, ad omnis! Tempora repellendus totam harum deserunt expedita iusto perspiciatis hic quis.
         
-        Nosso escritório está comprometido em ter os melhores profissionais, advogados, colaboradores e parceiros, empenhados em oferecer seus serviços com grande sensibilidade e comprometimento, com a mais alta competência e comunicação com os clientes.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugiat at doloribus placeat rerum quae consequuntur, voluptates tempore, praesentium architecto mollitia perferendis repudiandae. Laboriosam atque quod possimus, officia in porro?
       </p>
 
     <p>
       Praticamos a lei com vocação e paixão pela profissão para responder com excelência à confiança depositada em nós pelos nossos clientes.
             
     </p>
+    
 </div>
+<script>
+  var formulario = document.getElementById("formulario-contato")
+  var i = 0
+function ChamaAbacate(){
+  i ++
+  console.log("clicou")
+  formulario.className = "mostrar-formulario"
+  if (i == 2){
+      i = 0 
+      formulario.className = "form"
+  }
+}
 
+</script>
   </body>
 </html>
