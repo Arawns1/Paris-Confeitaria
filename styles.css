@@ -14,11 +14,16 @@
   height: 105vh;
   border-radius: 0px 0px 40px 40px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .cabecalho {
-  padding-top: 42px;
+  width: 100%;
+  position: fixed;
+  padding-top: 10px;
   padding-left: 35px;
   color: var(--white);
+  background-color: hsla(0, 0%, 0%, 0.212);
 }
 .titulo-cabecalho {
   display: inline;
@@ -32,10 +37,10 @@
 ul {
   display: inline;
   list-style: none;
-  margin-left: 50px;
+  margin-left: 4%;
 }
 a {
-  padding: 0px 20px;
+  padding: 0% 2%;
   text-decoration: none;
   border-radius: 5px;
   transition-property: font-size;
@@ -130,6 +135,8 @@ button:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
 }
+#titulo-meio-certo {
+}
 label {
   font-size: 14px;
   color: #252b42;
@@ -158,6 +165,15 @@ h2 {
   border-radius: 10px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
+}
+#card_01 {
+  border: 1px solid #061d93;
+}
+#card_02 {
+  border: 1px solid #e6e6e6;
+}
+#card_03 {
+  border: 1px solid #df2d34;
 }
 #cartão_01 {
   background-color: #061d93;
