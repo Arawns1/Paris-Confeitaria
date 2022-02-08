@@ -43,6 +43,7 @@ a {
   padding: 0% 2%;
   text-decoration: none;
   border-radius: 5px;
+  color: #ffffff;
   transition-property: font-size;
   transition-duration: 0.75s;
 }
@@ -62,7 +63,7 @@ h1 {
   font-size: 58px;
   color: var(--white);
   position: relative;
-  top: 35%;
+  top: 40%;
   margin-left: 35px;
   object-fit: cover;
   transition-property: color;
@@ -137,6 +138,7 @@ button:hover {
 }
 #titulo-meio-certo {
 }
+
 label {
   font-size: 14px;
   color: #252b42;
@@ -165,6 +167,13 @@ h2 {
   border-radius: 10px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
+  transition: transform 250ms;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: transform 250ms;
+  z-index: 10;
 }
 #card_01 {
   border: 1px solid #061d93;
